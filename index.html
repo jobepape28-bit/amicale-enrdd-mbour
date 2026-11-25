@@ -1,0 +1,958 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#174b37">
+  <meta name="description" content="Le site de l’Amicale des anciens camarades de la 11e promotion de l’École Normale Régionale Demba Diop de Mbour, Sénégal.">
+  <title>Amicale ENRDD Mbour · Promotion 1982–1986</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{forest:'#174b37',leaf:'#2d704e',cream:'#f5f0e4',sand:'#e9dfca',orange:'#e89742',ink:'#20352b'},fontFamily:{serif:['Georgia','serif']}}}}</script>
+  <style>
+    html{scroll-behavior:smooth} body{background:#f5f0e4} .copy{text-align:justify;text-justify:inter-word} .portrait{aspect-ratio:4/5;object-fit:cover} .oval{aspect-ratio:1/1.18;object-fit:cover;border-radius:50%} .hero-photo{height:400px} .grain{background-image:radial-gradient(#174b3710 .7px,transparent .7px);background-size:8px 8px}
+    @media(max-width:640px){.hero-photo{height:300px}}
+    .membre-album {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+.photo-membre {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.infos-membre h2 {
+  margin-top: 0;
+}
+
+.premier-poste {
+  color: #444;
+}
+
+.hommage {
+  font-style: italic;
+  color: #666;
+}
+/* Définir une taille fixe et uniforme pour les images de l'album */
+
+.album-card img, 
+.camarade-card img {
+  width: 100%;          /* S'adapte à la largeur du conteneur */
+  height: 250px;       /* Ajustez cette hauteur selon le rendu souhaité (ex: 250px ou 300px) */
+  object-fit: cover;   /* Empêche la déformation de l'image en conservant son ratio */
+  object-position: center; /* Centre le visage ou le sujet dans le cadre */
+  border-radius: 8px;  /* Optionnel : pour des coins légèrement arrondis */
+  /* Noms, prénoms et postes en bleu gras dans l'album */
+/* Boutons fléchés à gauche et à droite des carrousels */
+}
+
+  </style>
+</head>
+<body class="text-ink antialiased">
+<header class="sticky top-0 z-50 bg-forest text-white shadow-lg">
+ <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8" aria-label="Navigation principale">
+  <a href="#accueil" class="flex shrink-0 items-center gap-5" aria-label="Amicale ENRDD, accueil">
+   <span class="grid h-12 w-12 place-items-center rounded-full border-2 border-orange text-sm font-bold tracking-wide text-orange">EN</span>
+   <span class="leading-tight"><b class="block text-lg tracking-[.16em] text-orange">ENRDD</b><small class="tracking-[.2em]">1982/1986</small></span>
+  </a>
+  <button id="menuToggle" class="rounded-lg border border-white/30 px-3 py-2 text-sm lg:hidden" aria-expanded="false" aria-controls="mainMenu">Menu</button>
+  <div id="mainMenu" class="absolute left-0 right-0 top-full hidden flex-col gap-1 bg-forest px-5 pb-5 lg:static lg:flex lg:flex-row lg:items-center lg:gap-5 lg:bg-transparent lg:p-0">
+   <a class="navlink" href="#accueil">Accueil</a><a class="navlink" href="#introduction">Introduction</a><a class="navlink" href="#historique">Historique</a><a class="navlink" href="#album">Album</a><a class="navlink" href="#videos">Vidéos</a><a class="navlink" href="#projets">Projets</a>
+   <a class="rounded-full bg-orange px-4 py-2 text-center text-sm font-semibold text-forest transition hover:bg-white" href="#contact">Partager le site</a>
+  </div>
+ </nav>
+</header>
+<main>
+<section id="accueil" class="grain px-5 pb-16 pt-16 lg:pb-24 lg:pt-24">
+
+  <div class="mx-auto max-w-7xl">
+  <div class="mx-auto mb-12 max-w-4xl text-center text-forest">
+   <p class="mb-4 text-base font-bold tracking-[.3em] text-orange sm:text-xl">BIENVENUE DANS NOTRE SITE</p>
+   <h1 class="font-serif text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">Amicale des anciens camarades de la 11<sup>ème</sup> promotion</h1>
+   <h2 class="mt-5 font-serif text-lg font-bold italic text-forest sm:text-2xl">École Normale Régionale Demba Diop · Mbour, Sénégal · 1982–1986</h2>
+   <p class="copy mx-auto mt-6 max-w-2xl text-base leading-7 text-ink/75">Des années d’apprentissage, une vie d’engagement et une amitié qui continue de nous rassembler. Bienvenue dans la maison numérique de notre amicale.</p>
+  </div>
+
+  <div class="grid items-start gap-6 lg:grid-cols-[150px_minmax(0,1fr)_minmax(0,1fr)_150px] lg:gap-5">
+    <div class="hidden h-[150px] w-[150px] flex-col items-center justify-center rounded-3xl bg-forest text-center text-sm font-semibold leading-6 text-white shadow-lg lg:flex"><span>AMICALE</span><span class="text-orange">ENRDD MBOUR</span><span>1982–1986</span></div>
+   <figure><img class="hero-photo h-64 w-full rounded-2xl object-cover shadow-xl sm:h-72" src="images/administration.jpeg" alt="Bâtiment scolaire abritant l’administration de l’école"><figcaption class="mt-3 text-center text-sm font-bold text-ink/80">Bâtiment abritant les locaux de l’administration</figcaption></figure>
+   <figure><img class="hero-photo h-64 w-full rounded-2xl object-cover shadow-xl sm:h-72" src="images/batimentclasse.jpeg" alt="Salles de classe de l’école"><figcaption class="mt-3 text-center text-sm font-bold text-ink/80">Salles de classe témoins des passages de beaucoup de générations d’élèves maîtres.</figcaption></figure>
+   <div class="flex min-h-[150px] flex-col items-center justify-center rounded-3xl bg-forest px-5 py-6 text-center font-serif text-sm font-semibold italic leading-6 text-orange shadow-lg lg:h-[150px] lg:w-[150px]">« L’Amitié en partage, la solidarité en action »</div>
+  </div>
+  <div class="mt-6 flex justify-center gap-3 lg:hidden"><span class="rounded-2xl bg-forest px-5 py-3 text-center text-sm font-semibold leading-6 text-white">AMICALE<br><b class="text-orange">ENRDD MBOUR</b><br>1982–1986</span></div>
+ </div>
+</section>
+<section class="px-5 pb-16"><div class="mx-auto max-w-6xl overflow-hidden rounded-3xl bg-white p-3 shadow-xl sm:p-5"><img class="h-[300px] w-full rounded-2xl object-cover sm:h-[500px]" src="images/photo de groupe.jpeg" alt="Photo de groupe illustrative, à remplacer par la photo des membres de l’amicale"><p class="copy px-3 py-5 text-center text-sm font-semibold leading-6 tracking-wide text-forest sm:text-base">JANVIER 2026 : EN PÈLERINAGE À L’ÉCOLE NORMALE DEMBA DIOP, DEVENUE LYCÉE</p></div></section>
+<section id="introduction" class="bg-forest px-5 py-20 text-white sm:py-24"><div class="mx-auto max-w-4xl"><p class="mb-3 text-center text-xs font-bold tracking-[.3em] text-orange">NOTRE HISTOIRE COMMUNE</p><h2 class="mb-8 text-center font-serif text-3xl font-bold sm:text-4xl">Introduction</h2><p class="copy text-base leading-8 text-white/90">Bienvenue sur la plateforme officielle de l'Amicale des anciens élèves-maîtres de la
+                 11ème promotion de l'École Normale Régionale Demba Diop de Mbour. Quarante trois ans après avoir franchi ensemble les portes de cette 
+                 prestigieuse école, cet espace numérique a été conçu pour réunir à nouveau les camarades de notre promotion d'exception (1982-1986). <br>
+                 Dispersés par la vie et la carrière aux quatre coins du Sénégal et du monde, ce site est notre pont virtuel.Il nous permet  
+                 de perpétuer les valeurs d'éducation, de confraternité et de solidarité qui nous ont été transmises
+                 sous l'égide de nos illustres professeurs parmi lesquels on peut citer feu Lamite Gassama(philosophie de l'éducation),
+                 Danfakha (histoire-géographie), Omar Ndiaye, Diakhaté (Français), Alpha Datt ( Pédagogie spéciale), Ousseynou Mbaye (Pédagogie générale),
+                 Binaud (Sciences naturelles), Sall Diop (Mathématiques). .</p><p class="copy mt-5 text-base leading-8 text-white/90">Aujourd’hui, notre amicale fait vivre cette mémoire et transforme l’amitié en solidarité concrète. Elle offre à ses membres un espace de retrouvailles, de transmission et d’action au service de notre communauté.</p></div></section>
+<!--<section id="historique" class="bg-white px-5 py-20 sm:py-24"><div class="mx-auto max-w-4xl"><p class="mb-3 text-center text-xs font-bold tracking-[.3em] text-orange">NOS RACINES</p><h2 class="mb-10 text-center font-serif text-3xl font-bold text-forest sm:text-4xl">Historique de l’amicale</h2><div class="copy space-y-5 text-base leading-8 text-ink/80"><p> L'histoire de notre Amicale commence en 1982, lorsque des jeunes enthousiastes familièrement surnommés 
+           "Gros bleus", franchissent les portes de l'Ecole Normale pour suivre une formation d'Instituteurs.     
+           Elle s'enracine dans la riche culture éducative de ce prestigieux établissement au milieu des années quatre vingts. 
+           De 1982 à 1986 notre promotion a suivi une formation rigoureuse façonnée par le dévouement envers 
+           l'enseignement public, s'inspirant des résultats des Etats Généraux de l'Education de janvier 1981.
+            On était alors à l'ère de 'l'Ecole Nouvelle" <br>
+           Au fil des années, malgré les distances géographiques et les parcours professionnels divers, dans l'enseignement 
+           et l'administration, le lien est resté intact.  D'où la création formelle de cette Amicale pour répondre 
+           à la volonté commune de garder vivante, la mémoire de notre passage 
+           à Mbour et de concrétiser notre slogan:"L'amitié en partage, la solidarité en action". 
+          Pendant quatre ans, la promotion va se forger une identité commune et tisser des liens 
+          indéfectibles. <br> Une période de dure labeur que l'on pourrait articuler sur trois points: <br>
+ </p>
+ <p> I.	   LE PARCOURS DE FORMATION </span>
+
+         <br> 1)	Alternance Théorie-Pratique : L'apprentissage navigue constamment entre les cours théoriques
+          dispensés à l'école et les immersions régulières dans les classes d'application permettant d'apprivoiser 
+          le métier sur le terrain. <br>
+2)	Les deux mémoires : Un travail intellectuel intense marqué par la rédaction et la soutenance de deux épreuves
+clés: <br>
+	Le mémoire d’étude du milieu : Analyse approfondie de l'environnement économique, socio-culturel et géographique du Sénégal. <br>
+
+	Le mémoire psychopédagogique :Réflexion ciblée sur la psychologie de l'enfant sur les méthodes pédagogiques et 
+les démarches d'enseignement apprentissage. <br>
+3)	La sortie en 1986 : L'aboutissement des quatre années débouche sur la soutenance des deux mémoires, 
+préalable à la mise en stage pratique sur le terrain avant le grand saut dans la carrière enseignante. <BR></BR>
+
+II.	DE LA FORMATION A L’AMICALE <br>
+Au-delà de la rigueur académique, les épreuves partagées, les séances de préparation de classe et la Solidarité
+face à une administration parfois hostile, ont créé une fraternité solide. Une fois diplômés de BSEN et de CAP en 1986
+la volonté de ne pas se perdre de vue a donné naissance à l'Amicale, un espace privilégié pour entretenir
+la mémoire des quatre années formatrices, célébrer le parcours de chacun et perpétuer l'esprit d'entreaide.
+            </p>
+   III.	EN MEMOIRE DE NOS DISPARUS <br>
+1)	Pendant la formation :Le souvenir de nos camarades arrachés à notre affection en cours de cursus demeure 
+dans nos coeurs et nos esprits.Leur départ brutal a laissé un vide digne de ce nom au sein de la promotion, mais il nous
+a rappelé notre vulnérabilité face au décret divin et scellé encore plus fort notre fraternité. <br>
+2)	Après la formation et au fil des ans: Une fois le chemin de la vie professionnelle engagée, la mort
+a malheureusement continué d'égrener nos rangs. Enseignants dévoués ces compagnons de route ont accompli leur mission avant 
+de s'éteindre. <br>
+3)	Le devoir de mémoire :L'Amicale s'assigne ainsi un devoir sacré: honorer la mémoire de tous nos camarades rappelés à Dieu.
+ A travers nos prières,nos pensées et nos rencontres, leur présence spirituelle continue de faire vivre l'esprit
+  de la 11ème promotion. <br>
+
+4)	Le soutien aux familles et aux ayants droit :
+Au-delà du souvenir, l'Amicale concrétise sa solidarité en maintenant un lien étroit avec les familles de nos regrettés camarades.
+Ele apporte notamment une assistance attentive et un accompagnement précieux aux veuves dans les démarches 
+administratives et le règlement des successions.
+</p><p></p></div></div></section>
+<section id="album" class="px-5 py-20 sm:py-24">
+<section id="album" class="px-5 py-20 sm:py-24"><div class="mx-auto max-w-7xl"><p class="mb-3 text-center text-xs font-bold tracking-[.3em] text-orange"></p><h2 class="mb-4 text-center font-serif text-3xl font-bold text-forest sm:text-4xl">Album du groupe</h2><p class="copy mx-auto mb-12 max-w-2xl text-center font-bold leading-7 text-ink/85">Retrouvez les camarades de la promotion. Les portraits, noms, postes de service et hommages.</p>
+ <div class="relative px-12">
+  <button type="button" aria-label="Précédent" onclick="document.getElementById('memberGrid').scrollBy({left:-340,behavior:'smooth'})" class="absolute -left-3 top-36 z-20 flex h-11 w-11  items-center justify-center rounded-full bg-forest text-lg font-bold text-white shadow-lg transition hover:bg-orange hover:text-forest">◀</button>
+  <button type="button" aria-label="Suivant" onclick="document.getElementById('memberGrid').scrollBy({left:340,behavior:'smooth'})" class="absolute -right-3 top-36 z-20 flex h-11 w-11  items-center justify-center rounded-full bg-forest text-lg font-bold text-white shadow-lg transition hover:bg-orange hover:text-forest">▶</button>
+  <div id="memberGrid" class="flex gap-6 overflow-x-auto scroll-smooth pb-6 snap-x [&>div]:w-64 [&>div]:shrink-0 [&>div]:snap-start sm:[&>div]:w-72">-->
+
+<section id="historique" class="bg-white px-5 py-10 sm:py-12"><div class="mx-auto max-w-4xl"><p class="mb-3 text-center text-xs font-bold tracking-[.3em] text-orange">NOS RACINES</p><h2 class="mb-8 text-center font-serif text-3xl font-bold text-forest sm:text-4xl">Historique de l’amicale</h2><div class="copy space-y-5 text-base leading-8 text-ink/80"><p>L'histoire de notre Amicale commence en 1982, lorsque des jeunes enthousiastes familièrement surnommés "Gros bleus", franchissent les portes de l'École Normale pour suivre une formation d'Instituteurs. Elle s'enracine dans la riche culture éducative de ce prestigieux établissement au milieu des années quatre-vingts. De 1982 à 1986 notre promotion a suivi une formation rigoureuse façonnée par le dévouement envers l'enseignement public, s'inspirant des résultats des États Généraux de l'Éducation de janvier 1981. On était alors à l'ère de « l'École Nouvelle ».<br>
+Au fil des années, malgré les distances géographiques et les parcours professionnels divers, dans l'enseignement et l'administration, le lien est resté intact. D'où la création formelle de cette Amicale pour répondre à la volonté commune de garder vivante la mémoire de notre passage à Mbour et de concrétiser notre slogan : « L'amitié en partage, la solidarité en action ». Pendant quatre ans, la promotion va se forger une identité commune et tisser des liens indéfectibles.<br>
+Une période de dur labeur que l'on pourrait articuler sur trois points :</p>
+
+<p class="pt-3 text-lg font-bold text-orange">I. LE PARCOURS DE FORMATION</p>
+<p><strong class="text-blue-700">1) Alternance Théorie-Pratique :</strong> L'apprentissage navigue constamment entre les cours théoriques dispensés à l'école et les immersions régulières dans les classes d'application permettant d'apprivoiser le métier sur le terrain.<br>
+<strong class="text-blue-700">2) Les deux mémoires :</strong> Un travail intellectuel intense marqué par la rédaction et la soutenance de deux épreuves clés :<br>
+— <em>Le mémoire d’étude du milieu :</em> Analyse approfondie de l'environnement économique, socio-culturel et géographique du Sénégal.<br>
+— <em>Le mémoire psychopédagogique :</em> Réflexion ciblée sur la psychologie de l'enfant, sur les méthodes pédagogiques et les démarches d'enseignement-apprentissage.<br>
+<strong class="text-blue-700">3) La sortie en 1986 :</strong> L'aboutissement des quatre années débouche sur la soutenance des deux mémoires, préalable à la mise en stage pratique sur le terrain avant le grand saut dans la carrière enseignante.</p>
+
+<p class="pt-3 text-lg font-bold text-orange">II. DE LA FORMATION À L’AMICALE</p>
+<p>Au-delà de la rigueur académique, les épreuves partagées, les séances de préparation de classe et la solidarité face à une administration parfois hostile ont créé une fraternité solide. Une fois diplômés du BSEN et du CAP en 1986, la volonté de ne pas se perdre de vue a donné naissance à l'Amicale, un espace privilégié pour entretenir la mémoire des quatre années formatrices, célébrer le parcours de chacun et perpétuer l'esprit d'entraide.</p>
+
+<p class="pt-3 text-lg font-bold text-orange">III. EN MÉMOIRE DE NOS DISPARUS</p>
+<p><strong class="text-blue-700">1) Pendant la formation :</strong> Le souvenir de nos camarades arrachés à notre affection en cours de cursus demeure dans nos cœurs et nos esprits. Leur départ brutal a laissé un vide au sein de la promotion, mais il nous a rappelé notre vulnérabilité face au décret divin et scellé encore plus fort notre fraternité.<br>
+<strong class="text-blue-700">2) Après la formation et au fil des ans :</strong> Une fois le chemin de la vie professionnelle engagé, la mort a malheureusement continué d'égrener nos rangs. Enseignants dévoués, ces compagnons de route ont accompli leur mission avant de s'éteindre.<br>
+<strong class="text-blue-700">3) Le devoir de mémoire :</strong> L'Amicale s'assigne ainsi un devoir sacré : honorer la mémoire de tous nos camarades rappelés à Dieu. À travers nos prières, nos pensées et nos rencontres, leur présence spirituelle continue de faire vivre l'esprit de la 11ème promotion.<br>
+<strong class="text-blue-700">4) Le soutien aux familles et aux ayants droit :</strong> Au-delà du souvenir, l'Amicale concrétise sa solidarité en maintenant un lien étroit avec les familles de nos regrettés camarades. Elle apporte notamment une assistance attentive et un accompagnement précieux aux veuves dans les démarches administratives et le règlement des successions.</p>
+</div></div></section>
+
+<section id="album" class="px-5 py-10 sm:py-12"><div class="mx-auto max-w-7xl"><h2 class="mb-3 text-center font-serif text-3xl font-bold text-forest sm:text-4xl">Album du groupe</h2><p class="copy mx-auto mb-8 max-w-2xl text-center font-bold leading-7 text-ink/85">Retrouvez les camarades de la promotion. Les portraits, noms, postes de service et hommages.</p>
+ <div class="relative px-12">
+  <button type="button" aria-label="Précédent" onclick="document.getElementById('memberGrid').scrollBy({left:-340,behavior:'smooth'})" class="absolute left-0 top-36 z-20 flex h-11 w-11 items-center justify-center rounded-full bg-forest text-lg font-bold text-white shadow-lg transition hover:bg-orange hover:text-forest">◀</button>
+  <button type="button" aria-label="Suivant" onclick="document.getElementById('memberGrid').scrollBy({left:340,behavior:'smooth'})" class="absolute right-0 top-36 z-20 flex h-11 w-11 items-center justify-center rounded-full bg-forest text-lg font-bold text-white shadow-lg transition hover:bg-orange hover:text-forest">▶</button><div id="memberGrid" class="flex gap-6 overflow-x-auto scroll-smooth pb-6 snap-x [&>div]:w-64 [&>div]:shrink-0 [&>div]:snap-start sm:[&>div]:w-72">
+
+<div> <img src="images/photo1.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong>CHEIKH T. KEBE </strong> <br>
+  <strong> 1er poste: sinthiou MaÏram Dpt Podor</strong> <br>
+  <strong> Une plume inspirée qui perpétue 
+    l'héritage littéraire du père et immortalise notre mémoire collective</strong>
+</p>  </div>
+<div> <img src="images/photo2.jpeg " alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong> DEMBA NDIAYE</strong> <br>
+  <strong> 1er poste: Couba Dpt; Bignona </strong> <br>
+  <strong> Un surveillant général d'exception dont le dévouement a marqué à jamais le lycée de Ndande</strong>
+</p>  </div>
+<div> <img src="images/photo3.jpeg " alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong>MAMADOU YOUSSOU AW </strong> <br>
+  <strong> 1er poste: Soringho Dpt Matam </strong> <br>
+  <strong> Un gestionnaire rigoureux et chevronné, maître de l'intendance au service du MEN.</strong>
+</p>  </div>
+<div> <img src="images/photo4.jpeg " alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong>ABDOULAYE BALDE</strong> <br>
+  <strong> 1er poste: Senguère Boudié Dpt:Sédhiou </strong> <br>
+  <strong> Un diplomate dévoué portant l'excellence de notre formation sur sur la scène internationale au service de la paix.</strong>
+</p>  </div>
+<div> <img src="images/photo5.jpeg " alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong>ADAMA DEME</strong> <br>
+  <strong> 1er poste: Saré Lountang Korassé Dpt: Kolda</strong> <br>
+  <strong> Un batisseur d'avenir qui a piloté son établissement avec passion, et un sens élevé du devoir éducatif.</strong>
+</p>  </div>
+    <div> <img src=" images/photo6.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong>IBRAHIMA DONDE :</strong> <br>
+  <strong> 1er poste: Tombonkoto Dpt: Kédougou </strong> <br>
+  <strong>Un Directeur dévoué dont le leadership et l'engagement pédagogique continuent d'inspirer des générations d'élèves. </strong>
+</p>  </div>
+</strong>
+ <div> <img src="images/photo7.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong> ASSANE NDIAYE</strong> <br>
+  <strong> 1er poste: Taîf Dpt Fatick </strong> <br>
+  <strong>Un acteur clé de l'appareil judiciaire, veillant avec méthode à l'authenticité des actes et à la fluidité des procédures. </strong>
+  </p>  </div>
+  </strong>
+  <div> <img src="images/photo8.jpeg " alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong>MACODOU NDIAYE</strong> <br>
+  <strong> 1er poste: Thiès Dpt Thiès </strong> <br>
+  <strong>Un gestionnaire chevronné à l'Inspection d'Académie de Thiès, maïtre de l'intendance et pilier de l'administration scolaire. </strong>
+</p>  </div>
+
+
+
+   <div> <img src="images/photo9.jpeg " alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong>JEAN LAMANE DIOUF </strong> <br>
+  <strong> 1er poste: Tourimé Dpt Bakel <br>
+  <strong> L'une des sentinelles du CEB de notre système éducatif 
+    qui a veillé avec rigueur et passion sur la qualité de l'enseignement et le suivi des maîtres
+  de l'IEF de Rufisque </strong>
+</p>  </div>
+</strong>
+<div> <img src="images/photo10.jpeg " alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong>MALO DIOP <br> Adjoint au Maire de Mbao <br> (en arrière plan à gauche)</strong> <br>
+  <strong> 1er poste: Soringho Dpt Matam </strong> <br>
+  <strong>Un grand serviteur au leadership affirmé qui met son expérience au service des citoyens de Mbao. </strong>
+</p>  </div> 
+ 
+<div> <img src=" images/photo11.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong>  Amadou Matar Sarr</strong> <br>
+  <strong> </strong> 
+  <strong>Un camarade de la 1ère heure qui a tracé sa voie en Europe avant la fin de notre parcours,
+     mais dont le coeur et la fidélité sont ancrés à jamais à Mbour.
+     </strong>
+      </strong>
+</p>  </div>  
+<div> <img src="images/photo12.jpeg " alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong> PAPA MEDOUNE DIA </strong> <br>
+  <strong> 1er poste:Kounghany Dpt Bakel</strong> <br>
+  <strong>Un manager émérite qui orchestre la vie scolaire avec rigueur, bienveillance et sens du devoir </strong>
+</p>  </div>  
+  </strong>
+<div> <img src="images/photo13.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong> MOUHAMADOU ABDOULAYE NDIAYE </strong> <br>
+  <strong> 1er poste: Brikamanding Dpt Bignona</strong> <br>
+  <strong>Un pilier de la diaspora, gardien indectible du lien de solidarité avec la terre natale</strong>
+</p>  </div>  
+ </strong>
+<div> <img src=" images/photo14.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong> DAOUDA DIOUF </strong> <br>
+  <strong> 1er poste:Saraya Dpt Kédougou</strong> <br>
+  <strong>Un camarade de la diaspora dont le parcours à l'étranger fait
+     la fierté de toute notre promotion. Son attachement indefectible à l'Amicale prouve que la distance n'a jamais altéré
+    nos liens de solidarité</strong>
+</p>  </div>  
+ </strong>
+<div> <img src="images/photo15.jpeg " alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong> Ibrahima Niang </strong> <br>
+  <strong> 1er poste: Sangharé Dpt Fatick</strong> <br>
+  <strong>Un membre précieux de notre diaspora qui malgré la distance
+     reste profondément attaché à notre promotion et perpétue l'esprit de Mbour audelà des fronières.</strong>
+</p>  </div>  
+ </strong>
+
+<div> <img src=" images/photo16.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong> MOUSSA TINE </strong> <br>
+  <strong> 1er poste:Diorbivol Dpt Matam. </strong> <br>
+  <strong>Un pédagogue passionné de la langue espagnol, surnommé avec affection "señor", il a su transmettre
+     avec brio l'amour de la langue et le sens de l'excellence à beaucoup de génération d'élèves </strong>
+</p>  </div>  
+ </strong>
+<div> <img src="images/photo17.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong> BIRAME SENE </strong> <br>
+  <strong> 1er poste: Boyard Dpt Fatick</strong> <br>
+  <strong> 
+      Sa rigueur et son dévouement au Ministère des finances
+     démontrent avec éclat que l'enseignement mène aux plus hautes responsabilités de la République. </strong>
+</p>  </div>  
+ </strong>
+
+<div> <img src=" images/photo18.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong> ASSANE SAMBE </strong> <br>
+  <strong> 1er poste:Arafat Dpt Kaffrine</strong> <br>
+  <strong>Gardien rigoureux de nos finances au sein de l'amicale, il a apporté en sa qualité de surveillant généralfait
+     la même méthode et la même bienveillance à la gestion des élèves du CEM </strong>
+</p>  </div>  
+ </strong>
+
+<div> <img src="images/photo19.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong> AMATH THIAM </strong> <br>
+  <strong> 1er poste: Ndouloumadji Dembé Dpt Matam</strong> <br>
+  <strong> Un pilier de l'éducation nationale qui a dirigé son école avec sagesse et équité.
+     Sa vision et son leadership ont préparé avec succès l'avenir de plusieurs jeunes.</strong>
+</p>  </div>  
+ </strong>
+<div> <img src="images/photo20.jpg" alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong> MASSENE MBOUP</strong> <br>
+  <strong> 1er poste:kHOMBOLE </strong> <br>
+  <strong> De Mbour à outre-Atlantique, la passion de transmettre ne connaît pas de frontières.
+     Ambassadeur de notre savoir-faire au cœur du système éducatif américain,
+     il fait rayonner les valeurs et l'excellence de notre promotion à l'échelle internationale</strong>
+</p>  </div>  
+ </strong>
+<div> <img src="images/photo21.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong> SAMBA BEYE</strong> <br>
+  <strong> 1er poste: Simankounda Dpt Sédhiou</strong> <br>
+  <strong>Un batisseur d'avenir dont la rigueur managériale et le dévouement
+    ont durablement transformé sont établissement. </strong>
+</p>  </div>  
+ </strong>
+
+<div> <img src="images/photo22.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong> ABDOU SEYE</strong> <br>
+  <strong> 1er poste: Youtou Dpt Oussouye</strong> <br>
+  <strong>Un professionnel de la gestion au Minstère des Finances qui met ses compétences techniques 
+    au service de la rigueur financière de l'Etat.</strong>
+
+
+</p>  </div>   
+ </strong>
+<div> <img src="images/photo23.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong>MADAME SEYE </strong> <br>
+  <strong>  </strong> <br>
+  <strong>Une hotesse au grand coeur dont l'accueil chaleureux 
+    et l'implication dévouée ont fait du pélerinage à Mbour un moment inoubliable de fraternité. </strong>
+</p>  </div>  
+ </strong>
+<div> <img src="images/photo24.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong> SIDY TRAORE</strong> <br>
+  <strong> 1er poste: </strong> <br>
+  <strong>Couronné par la République comme Ordre National du Lion, il incarne la noblesse de notre vocation
+     et fait la fierté de toute la 11ème promotion.</p>strong>
+</p>  </div> 
+  </strong>
+<div> <img src="images/photo25.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees"> 
+
+<strong>PAPA SOULEYMANE THIAM </strong> <br>
+  <strong> 1er poste: Diaga Keur Serigne Ide Dpt Kaffrine</strong> <br>
+  <strong> Un Surveillant Général remarquable dont la rigueur et l'autorité naturelle ont façonné la discipline au 
+     lycée de Keur Madiabel.
+  </strong>
+</p>  </div>
+ </strong>
+<div> <img src="images/photo26.jpg" alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong>IBRAHIMA TRAORE </strong> <br>
+  <strong> 1er poste:BOW Dpt de Matam </strong> <br>
+  <strong> Un pilote d'établissement chevronné garant de la discipline et de l'excellence académique
+     dans son école.</strong> <br>
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo27.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong>BABACAR BOP </strong> <br>
+  <strong> 1er poste: Kounghany Dpt Bakel</strong> <br>
+  <strong>Un manager émérite qui a su  orchestrer la vie de son école avec une grande bienveillance</strong>
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo28.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong> OUSMANE TOP</strong> <br>
+  <strong> 1er poste: Nianao Dpt Vélingara</strong> <br>
+  <strong>En sa qualité de SG et par sa vision managériale rigoureuse et son sens aigu de l'organisation, il a su impulser 
+    une dynamique d'excellence au sein du Bloc Scientifique et Technique de Rufisque.  </strong> <br>
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo29.jpg" alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong> ADAMA FAYE</strong> 
+  <strong> 1er poste: </strong> <br>
+  <strong>  
+    Sa gestion éclairée de l'administration scolaire a fait de son école un véritable modèle de réussite. </strong> <br>
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo30.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong> ASSANE DIANGAR</strong> <br>
+  <strong> 1er poste: Saré Doro Thiam Dpt Kolda </strong> <br>
+  <strong> Son rôle de directeur a été marqué par sa capacité remarquable à mobiliser son équipe pédagogique 
+     autour des objectifs ambitieux du CEB.
+     </strong> <br>
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo31.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+    <p class="coordonnees">
+  <strong>OUMAR DIA </strong> <br>
+  <strong> 1er poste: Daroumarnane Dpt Gossass</strong> <br>
+  <strong> Elevé au rang de préfet au service de l'administration territoire, il honore sa promotion
+    par son parcours remarquable et son dévouement exemplaire.
+  </strong>
+</p>  </div>  
+ </strong>
+<div> <img src="images/photo32.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> NGOR NDOUR</strong> <br>
+  <strong> 1er poste:Saraya Dpt Kédougou </strong> <br>
+  <strong> Un batisseur et cadre du système éducatif qui a veillé avec passion, exigence et bienveillance 
+    sur l'encadrement des enfants et la qualité des enseignements apprentissage.
+  </strong> 
+</p>  </div>  
+ </strong>
+<div> <img src="images/photo33.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> ALIOU FALL</strong> <br>
+  <strong> 1er poste:Kandokhou Dpt Kédougou </strong> <br>
+  <strong> Un pédagogue exemplaire qui a su transmettre aux élèves comme aux enseignants le goût de l'effort. 
+    Son empreinte reste gravée dans l'histoire de son école. </strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo34.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong>DJIBY BAR </strong> <br>
+  <strong> 1er poste: Tuabou Dpt Bakel</strong> <br>
+  <strong> Un serviteur engagé de la nation qui met toute son expérience et son leadership au service des citoyens de Touba Mbéla..</strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo35.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong>MATAR DIOUF </strong> <br>
+  <strong> 1er poste: Syllacounda Dpt Kédougou</strong> <br>
+  <strong> Un pilote d'établissement chevronné dont le sens
+     du devoir et l'engagement pédagogique continuent d'éclairer la voie des jeunes générations</strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo36.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong>BARA MBAYE </strong> <br>
+  <strong> 1er poste: Thiabédji Dpt Kédougou </strong> <br>
+  <strong> Un directeur d'école engagé qui a su guider son équipe et ses élèves avec rigueur, sagesse et dévouement.
+     Son leadership exemplaire laisse une empreinte durable dans l'histoire de son établissement.</strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo37.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> ABDOULAYE GASSAMA</strong> <br>
+  <strong> 1er poste:Dialocoto Dpt de Tamba </strong> <br>
+  <strong> Un cadre passionné qui consacré sa carrière à l'amélioration continue de l'enseignement. Son exigence et son écoute
+    ont transformé durablement son établissement.
+  </strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo38.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong>ABDOULAYE DIOP </strong> <br>
+  <strong> 1er poste: Djiragone Dpt Sédhiou</strong> <br>
+  <strong> Un gestionnaire rigoureux qui a su instaurer un climat de confiance au sein de son école.</strong> 
+</p>  </div>  
+ </strong>
+
+<div> <img src="images/photo39.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong>Cette belle complicité immortalise les retrouvailles inspiranteS d'un cadre du Ministères des finances, d'un fonctionnaire 
+    de l'ONU et d'un préfet, tous issus de la même promotion. Elle illustre avec fierté la grandeur de notre parcours commun:
+    partis des mêmes bancs d'école à Mbour, chacun sert aujourd'hui la nation et le monde avec la même vocation d'excellence.
+  </strong> <br>
+  <strong> 1er poste: </strong> <br>
+   </strong> 
+</p>  </div>  
+ </strong>
+<div> <img src="images/photo40.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> </strong> <br>
+  <strong> Un moment fort en émotion et en fierté notre camarade écrivain remet solennellement
+    son tout premier ouvrage au Président de l'Amicale, également adjoint au Maire de Mbao.
+  Un geste hautement symbolique qui célèbre le talent, la fraternité et le rayonnement intellectuel de la promotion 82/86.
+  </strong> <br>
+  </strong> 
+</p>  </div>  
+ </strong>
+<div> <img src="images/photo41.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong>(   De gauche à droite: <br> le prof aux USA <br> le greffier et le directeur d'école)</strong> <br>
+  <strong>Mes chers camarades,vos destins singuliers honorent notre grande famille et 
+    témoignent de la force des valeurs semées sur les bancs de notre formation. </strong> <br>
+ </strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo42.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+ 
+  <strong> Une magnifique complicité réunit ici un greffier, un émigré et un directeur d'école, illustrant à merveille la richesse 
+    des parcours de notre promotion. Malgré la diversité des carrières et les distances, le lien fraternel de Mbour reste intact 
+    et continue de nous rassembler avec la même ferveur.<</strong> <br>
+  <strong>  </strong> <br>
+  <strong> 
+  </strong> 
+</p>  </div>  
+ </strong>
+<div> <img src="images/photo43.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> </strong> <br>
+  <strong> La vie vous sépare, vos carrières vous emmènent loin, mais le cœur vous ramène souvent à vos racines, 
+    là où tout a commencé. C'est une belle leçon de vie.</strong> <br>
+   </strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo44.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> PROVISEUR: MAHE COR DIOUF</strong> <br>
+  <strong> Un accueil chaleureux et empreint de sagesse qui témoigne de sa haute considération pour notre parcours et de son engagement constant pour l'excellence de notre ancienne école. Sa présence à nos côtés lors de ce pèlerinage 
+    illustre la parfaite symbiose entre la mémoire de notre institution et son dynamisme actuel. </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo45.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong>IBRAHIMA NIANG  </strong> <br>
+  <strong>
+
+Œil attentif et caméra toujours en main, notre dévoué reporter capture avec passion chaque
+ instant fort et chaque sourire de ce pèlerinage mémorable. Il fixe à jamais dans l'histoire de notre amicale les précieux souvenirs de la 11ème promotion. </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+
+ <div> <img src="images/photo46.jpeg"alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong>CHEIKH TIDIANE KÉBÉ </strong> <br>
+  <strong> Dès l'arrivée dans la cour, notre camarade ravive les mémoires à travers des souvenirs anecdotiques et savoureux qui replongent immédiatement le groupe dans l'ambiance de l'époque. Ces récits chaleureux insufflent une énergie joyeuse et rappellent avec humour
+ la belle complicité qui unissait les « gros bleus » sur les bancs de l'École Normale. </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+<div> <img src="images/photo47.jpg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> Alpha Omar Fofana</strong> <br>
+  <strong> 1er poste: Somb Yandé Codou Dpt de Gossass</strong> <br>
+  <strong> Un formateur passionné et inspirant dont la maîtrise des arts musicaux a
+     éveillé la sensibilité créative de multiples générations d'élèves-maîtres. Son parcours illustre avec
+     brio la riche diversité des talents qui font la fierté de notre grande famille.</strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo48.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> ADAMA DEME</strong> <br>
+  <strong> 
+
+S'étant arrêté devant les anciens locaux des dortoirs de l'internat, notre camarade échange avec un membre du personnel du lycée. Ce dialogue chaleureux tisse un pont vivant entre
+ les souvenirs de jeunesse gravés dans ces murs et le visage actuel de l'établissement. </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo49.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> </strong> <br>
+  <strong> Lors des présentations entre le Proviseur et les membre du groupe</strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo50.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> </strong> <br>
+  <strong>  Lors des présentations entre le Proviseur et les membre du groupe </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo51.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> </strong> <br>
+  <strong> Lors des présentations entre le Proviseur et les membre du groupe </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+<div> <img src="images/photo52.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> </strong> <br>
+  <strong> Une photo de groupe lors de la visite des locaux </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo53.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> </strong> <br>
+  <strong> Toujours dans la visite du site </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo54.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> MASSENE MBOUP</strong> <br>
+  <strong>  </strong>
+
+En plein cœur de la visite des locaux, notre camarade n'hésite pas à franchir le seuil
+ d'une salle de classe pour renouer le contact avec certains élèves du lycée. 
+. <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+
+ <div> <img src="images/photo57.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong>HOMMAGE À NOTRE ANCIEN DIRECTEUR <br>Alpha Touré </strong> <br>
+  <strong> Visite de solidarité à son épouse </strong> <br>
+  <strong> Fidèles aux valeurs de reconnaissance et de solidarité de notre promotion, 
+    les membres de l'Amicale ont rendu une visite empreinte
+     d'émotion et de respect à la veuve de notre regretté 
+     Directeur de l'École Normale Régionale Demba Diop.</strong> 
+</p>  </div>  
+ </strong>
+
+<div> <img src="images/photo55.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> Madame Touré en vert</strong> <br>
+  <strong> </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo56.jpg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong>Toujours chez Madame Touré  </strong> <br>
+  <strong> </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+
+ <div> <img src="images/photo58.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> M. DIAKHATÉ — PROFESSEUR DE FRANÇAIS</strong> <br>
+  <strong> Retrouvailles dans son établissement privé </strong> <br>
+  <strong>Moment de grande fierté auprès de notre éminent professeur de français,
+     M. Diakhaté, qui poursuit avec passion sa mission éducative au sein de l'école privée qu'il a lui-même fondée. </strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo59.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> M. DANFAKHA — HISTOIRE-GÉOGRAPHIE</strong> <br>
+  <strong> Visite de courtoisie et de reconnaissance </strong> <br>
+  <strong>Chaleureuses rétrouvailles au domicile de notre illustre professeur d'histoire-géographie,
+     M. Danfakha, dont les enseignements ont profondément marqué notre formation à Mbour. </strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo60.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> M. DIAKHATÉ en bonnet rouge </strong> <br>
+  <strong> </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo61.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+   <strong>Aminata Mbaye </strong> 
+  <strong>Une hotesse d'une immense générosité qui nous a ouvert avec chaleur les portes de ce magnifique site 
+  touristique. Son accueil attentionné et sa bienveillance ont fait de notre séjour un moment fort en convivialité
+  et en émotions pour toute la promotion.   </strong> <br>
+  <strong> 1er poste: </strong> <br>
+ 
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo62.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong>A l'école de M. Diakhaté <br> Dans une salle de classe </strong> <br>
+  <strong>  </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo63.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong>A l'école de M. Diakhaté <br> Dans une salle de classe </strong> <br>
+  <strong>  </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo64.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> Chez Madame Touré </strong> <br>
+  <strong>  </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo65.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> Chez M. Danfakha </strong> <br>
+  <strong>  </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="images/photo66.jpeg" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> Un immense hommage à nos trois braves dames qui ont assuré avec brio, élégance et générosité leur rôle d'hôtesses.
+     Par leur disponibilité et leur chaleur humaine, elles ont grandement contribué 
+     à la réussite et à la convivialité de nos retrouvailles.</strong> <br>
+  <strong>  </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+ <!--<div> <img src="" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> </strong> <br>
+  <strong> 1er poste: </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> </strong> <br>
+  <strong> 1er poste: </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> </strong> <br>
+  <strong> 1er poste: </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> </strong> <br>
+  <strong> 1er poste: </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> </strong> <br>
+  <strong> 1er poste: </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> </strong> <br>
+  <strong> 1er poste: </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+ <div> <img src="" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> </strong> <br>
+  <strong> 1er poste: </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+  <div> <img src="" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> </strong> <br>
+  <strong> 1er poste: </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+  <div> <img src="" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> </strong> <br>
+  <strong> 1er poste: </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+  <div> <img src="" alt="Photo de l’album de l’Amicale de Mbour"> 
+ <p class="coordonnees">
+  <strong> </strong> <br>
+  <strong> 1er poste: </strong> <br>
+  <strong> </strong> 
+</p>  </div>  
+ </strong>
+
+  <div class="album-card" aria-label="Emplacement réservé pour la photo 61">
+    <div class="flex h-[250px] flex-col items-center justify-center rounded-lg border-2 border-dashed border-forest/30 bg-cream text-center text-forest/70">
+      <svg aria-hidden="true" class="mb-3 h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8.5A2.5 2.5 0 0 1 5.5 6h2l1.2-2h6.6l1.2 2h2A2.5 2.5 0 0 1 21 8.5v9a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5v-9Z"/><circle cx="12" cy="13" r="3.5"/></svg>
+      <span class="font-semibold">Photo à ajouter</span><span class="mt-1 text-sm">Emplacement 61</span>
+    </div>
+    <p class="coordonnees"><strong></strong><br><strong>1er poste :</strong><br><strong></strong></p>
+  </div>
+  <div class="album-card" aria-label="Emplacement réservé pour la photo 62"><div class="flex h-[250px] flex-col items-center justify-center rounded-lg border-2 border-dashed border-forest/30 bg-cream text-center text-forest/70"><svg aria-hidden="true" class="mb-3 h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8.5A2.5 2.5 0 0 1 5.5 6h2l1.2-2h6.6l1.2 2h2A2.5 2.5 0 0 1 21 8.5v9a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5v-9Z"/><circle cx="12" cy="13" r="3.5"/></svg><span class="font-semibold">Photo à ajouter</span><span class="mt-1 text-sm">Emplacement 62</span></div><p class="coordonnees"><strong></strong><br><strong>1er poste :</strong><br><strong></strong></p></div>
+  <div class="album-card" aria-label="Emplacement réservé pour la photo 63"><div class="flex h-[250px] flex-col items-center justify-center rounded-lg border-2 border-dashed border-forest/30 bg-cream text-center text-forest/70"><svg aria-hidden="true" class="mb-3 h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8.5A2.5 2.5 0 0 1 5.5 6h2l1.2-2h6.6l1.2 2h2A2.5 2.5 0 0 1 21 8.5v9a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5v-9Z"/><circle cx="12" cy="13" r="3.5"/></svg><span class="font-semibold">Photo à ajouter</span><span class="mt-1 text-sm">Emplacement 63</span></div><p class="coordonnees"><strong></strong><br><strong>1er poste :</strong><br><strong></strong></p></div>
+  <div class="album-card" aria-label="Emplacement réservé pour la photo 64"><div class="flex h-[250px] flex-col items-center justify-center rounded-lg border-2 border-dashed border-forest/30 bg-cream text-center text-forest/70"><svg aria-hidden="true" class="mb-3 h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8.5A2.5 2.5 0 0 1 5.5 6h2l1.2-2h6.6l1.2 2h2A2.5 2.5 0 0 1 21 8.5v9a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5v-9Z"/><circle cx="12" cy="13" r="3.5"/></svg><span class="font-semibold">Photo à ajouter</span><span class="mt-1 text-sm">Emplacement 64</span></div><p class="coordonnees"><strong></strong><br><strong>1er poste :</strong><br><strong></strong></p></div>
+  <div class="album-card" aria-label="Emplacement réservé pour la photo 65"><div class="flex h-[250px] flex-col items-center justify-center rounded-lg border-2 border-dashed border-forest/30 bg-cream text-center text-forest/70"><svg aria-hidden="true" class="mb-3 h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8.5A2.5 2.5 0 0 1 5.5 6h2l1.2-2h6.6l1.2 2h2A2.5 2.5 0 0 1 21 8.5v9a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5v-9Z"/><circle cx="12" cy="13" r="3.5"/></svg><span class="font-semibold">Photo à ajouter</span><span class="mt-1 text-sm">Emplacement 65</span></div><p class="coordonnees"><strong></strong><br><strong>1er poste :</strong><br><strong></strong></p></div>
+  <div class="album-card" aria-label="Emplacement réservé pour la photo 66"><div class="flex h-[250px] flex-col items-center justify-center rounded-lg border-2 border-dashed border-forest/30 bg-cream text-center text-forest/70"><svg aria-hidden="true" class="mb-3 h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8.5A2.5 2.5 0 0 1 5.5 6h2l1.2-2h6.6l1.2 2h2A2.5 2.5 0 0 1 21 8.5v9a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5v-9Z"/><circle cx="12" cy="13" r="3.5"/></svg><span class="font-semibold">Photo à ajouter</span><span class="mt-1 text-sm">Emplacement 66</span></div><p class="coordonnees"><strong></strong><br><strong>1er poste :</strong><br><strong></strong></p></div>
+  <div class="album-card" aria-label="Emplacement réservé pour la photo 67"><div class="flex h-[250px] flex-col items-center justify-center rounded-lg border-2 border-dashed border-forest/30 bg-cream text-center text-forest/70"><svg aria-hidden="true" class="mb-3 h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8.5A2.5 2.5 0 0 1 5.5 6h2l1.2-2h6.6l1.2 2h2A2.5 2.5 0 0 1 21 8.5v9a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5v-9Z"/><circle cx="12" cy="13" r="3.5"/></svg><span class="font-semibold">Photo à ajouter</span><span class="mt-1 text-sm">Emplacement 67</span></div><p class="coordonnees"><strong></strong><br><strong>1er poste :</strong><br><strong></strong></p></div>
+
+  </div> </div>-->  </section>
+<section id="videos" class="bg-white px-5 py-20 sm:py-24"><div class="mx-auto max-w-7xl">
+ <div class="mx-auto max-w-7xl">
+ 
+  <p class="mb-3 text-center text-base font-bold tracking-[.3em] text-orange sm:text-lg">SOUVENIRS EN MOUVEMENT</p>
+
+  <h2 class="mb-12 text-center font-serif text-3xl font-bold text-forest sm:text-4xl">Espace vidéos</h2>
+  <div class="relative px-12">
+    <button type="button" aria-label="Précédent" onclick="document.getElementById('videoGrid').scrollBy({left:-360,behavior:'smooth'})" class="absolute left-0 top-44 z-20 flex h-11 w-11 items-center justify-center rounded-full bg-forest text-lg font-bold text-white shadow-lg transition hover:bg-orange hover:text-forest">◀</button>
+    <button type="button" aria-label="Suivant" onclick="document.getElementById('videoGrid').scrollBy({left:360,behavior:'smooth'})" class="absolute right-0 top-44 z-20 flex h-11 w-11 items-center justify-center rounded-full bg-forest text-lg font-bold text-white shadow-lg transition hover:bg-orange hover:text-forest">▶</button>
+    <div class="flex gap-6 overflow-x-auto scroll-smooth pb-6 snap-x [&>article]:w-72 [&>article]:shrink-0 [&>article]:snap-start sm:[&>article]:w-80" id="videoGrid"></div>
+  </div>
+</div> 
+</div></section>
+<!--<section id="projets" class="px-5 py-20 sm:py-24"><div class="mx-auto max-w-7xl"><p class="mb-3 text-center text-xs font-bold tracking-[.3em] text-orange">AGIR ENSEMBLE</p><h2 class="mb-12 text-center font-serif text-3xl font-bold text-forest sm:text-4xl">Projets et réalisations</h2><div class="grid gap-6 md:grid-cols-2" id="projectGrid"></div></div></section>-->
+<section id="projets" class="px-5 py-10 sm:py-12"><div class="mx-auto max-w-7xl"><p class="mb-3 text-center text-sm font-bold tracking-[.3em] text-orange">AGIR ENSEMBLE</p><h2 class="mb-8 text-center font-serif text-3xl font-bold text-forest sm:text-4xl">Projets et réalisations</h2><div class="grid gap-6 md:grid-cols-2" id="projectGrid"></div></div></section>
+
+<section id="adhesion" class="bg-cream px-5 py-12 sm:py-16">
+  <div class="mx-auto max-w-6xl">
+    <p class="mb-3 text-center text-sm font-bold tracking-[.3em] text-orange">ESPACE MEMBRES</p>
+    <h2 class="mb-4 text-center font-serif text-3xl font-bold text-forest sm:text-4xl">Adhésion &amp; Cotisations</h2>
+    <p class="copy mx-auto mb-10 max-w-2xl text-center text-base leading-7 text-ink/80">
+      Rejoignez officiellement le réseau de la 11<sup>ème</sup> promotion et participez aux actions de solidarité de notre amicale.
+    </p>
+
+    <div class="grid gap-8 md:grid-cols-2">
+      <!-- CARTE 1 : ADHÉSION EN LIGNE -->
+      <article class="flex flex-col justify-between rounded-3xl border border-sand bg-white p-7 shadow-md sm:p-8">
+        <div>
+          <span class="inline-block rounded-full bg-forest/10 px-4 py-1 text-xs font-bold uppercase tracking-widest text-forest">Étape 1 · Recensement</span>
+          <h3 class="mt-4 font-serif text-2xl font-bold text-forest">Fiche d’adhésion des camarades</h3>
+          <p class="copy mt-3 text-sm leading-7 text-ink/75">
+            Remplissez votre fiche en ligne (identité, 1<sup>er</sup> poste d’affectation, lieu de résidence actuel et contact WhatsApp) afin d’actualiser le répertoire officiel de la promotion 1982–1986.
+          </p>
+          <ul class="mt-4 space-y-2 text-sm text-ink/80">
+            <li>✔ Inscription rapide en 2 minutes</li>
+            <li>✔ Mise à jour de l’annuaire des anciens élèves-maîtres</li>
+            <li>✔ Réception des informations et convocations de l’Amicale</li>
+          </ul>
+        </div>
+        <div class="mt-7">
+          <a href="LIEN_GOOGLE_FORMS_ADHESION" target="_blank" rel="noopener" class="block w-full rounded-full bg-forest px-6 py-3.5 text-center text-sm font-bold text-white shadow transition hover:bg-orange hover:text-forest">
+            Remplir ma fiche d’adhésion
+          </a>
+          <p class="mt-2 text-center text-xs text-ink/60">Formulaire officiel sécurisé de l’Amicale</p>
+        </div>
+      </article>
+
+      <!-- CARTE 2 : COTISATIONS WAVE & ORANGE MONEY -->
+      <article class="flex flex-col justify-between rounded-3xl border border-sand bg-white p-7 shadow-md sm:p-8">
+        <div>
+          <span class="inline-block rounded-full bg-orange/15 px-4 py-1 text-xs font-bold uppercase tracking-widest text-orange">Étape 2 · Solidarité</span>
+          <h3 class="mt-4 font-serif text-2xl font-bold text-forest">Cotisations &amp; Caisse de solidarité</h3>
+          <p class="copy mt-3 text-sm leading-7 text-ink/75">
+            Réglez votre droit d’adhésion ou vos cotisations mensuelles via mobile money sur les comptes dédiés à la trésorerie de l’Amicale :
+          </p>
+
+         <!-- <div class="mt-4 space-y-3 rounded-2xl bg-cream p-4 text-sm">
+            <div class="flex items-center justify-between border-b border-sand pb-2">
+              <span class="font-bold text-sky-600">Wave Sénégal :</span>
+              <span class="font-mono font-bold text-forest">+221 77 000 00 00 (En cours)</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-orange">Orange Money :</span>
+              <span class="font-mono font-bold text-forest">+221 77 000 00 00 (En cours)</span>
+            </div>
+          </div>-->
+                   <div class="mt-4 space-y-3 rounded-2xl bg-cream p-4 text-sm">
+            <div class="flex items-center justify-between border-b border-sand pb-2">
+              <span class="font-bold text-sky-600">Wave Sénégal :</span>
+              <span class="font-semibold text-forest">Communiqué sur le groupe officiel</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-orange">Orange Money :</span>
+              <span class="font-semibold text-forest">Communiqué sur le groupe officiel</span>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="mt-7">
+          <a href="LIEN_GOOGLE_FORMS_COTISATION" target="_blank" rel="noopener" class="block w-full rounded-full bg-orange px-6 py-3.5 text-center text-sm font-bold text-forest shadow transition hover:bg-forest hover:text-white">
+            Confirmer mon versement
+          </a>
+          <p class="mt-2 text-center text-xs text-ink/60">Indiquez votre nom et la référence de transaction au Trésorier</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+</main>
+<footer id="contact" class="bg-forest px-5 pb-6 pt-14 text-white"><div class="mx-auto grid max-w-7xl gap-12 border-b border-white/15 pb-12 md:grid-cols-2 lg:grid-cols-[1fr_1.3fr_1fr]">
+ <div><h2 class="mb-4 font-serif text-xl font-bold">Amicale ENRDD Mbour 82–86</h2><p class="copy text-sm font-light leading-7 text-white/75">Organisation regroupant les instituteurs formés à Mbour, Sénégal, de 1982 à 1986.</p><p class="copy mt-4 text-sm font-light italic leading-7 text-white/75">« L’amitié en partage, la solidarité en action »</p></div>
+ <div><h2 class="mb-4 font-serif text-xl font-bold">Navigation rapide</h2><div class="grid grid-cols-2 gap-2"><a class="quicklink" href="#accueil">Accueil</a><a class="quicklink" href="#introduction">Introduction</a><a class="quicklink" href="#promotion">Promotion</a><a class="quicklink" href="#historique">Historique</a><a class="quicklink" href="#album">Album</a><a class="quicklink" href="#videos">Vidéos</a><a class="quicklink" href="#projets">Projets</a><a class="quicklink" href="#contact">Contact</a></div></div>
+ <div><h2 class="mb-4 font-serif text-xl font-bold">Contacts de l’amicale</h2><ul class="space-y-3 text-sm text-white/80"><li><span class="font-semibold text-white">Siège social :</span> Mbour</li><li><span class="font-semibold text-white">Secrétariat :</span> <a href="tel:+221770000000" class="hover:text-orange">+221 77 000 00 00</a></li><li><span class="font-semibold text-white">Email :</span> <a href="mailto:contactamicale@gmail.com" class="break-all hover:text-orange">contactamicale@gmail.com</a></li></ul><button id="shareButton" class="mt-6 w-full rounded-full bg-orange px-5 py-3 text-sm font-bold text-forest transition hover:bg-white">Partager le site aux camarades</button><p id="shareStatus" class="mt-2 min-h-5 text-xs text-white/70" aria-live="polite"></p></div>
+ </div><p class="mx-auto max-w-7xl pt-6 text-center text-xs text-white/60">© 2026 Amicale ENRDD Mbour 82–86. Tous droits réservés.</p></footer>
+<!--<script>
+const nav=document.getElementById('mainMenu');
+document.querySelectorAll('.navlink').forEach(a=>a.className='navlink rounded-lg px-2 py-2 text-sm font-medium text-white/90 transition hover:bg-white/10 hover:text-orange');
+document.querySelectorAll('.quicklink').forEach(a=>a.className='quicklink rounded-lg bg-leaf px-3 py-2 text-sm text-white transition hover:bg-orange hover:text-forest');
+document.getElementById('menuToggle').addEventListener('click',e=>{const open=nav.classList.toggle('hidden')===false;e.currentTarget.setAttribute('aria-expanded',open)});
+const memberGrid=document.getElementById('memberGrid');
+
+
+const videos=[
+  ['Retrouvailles de la promotion','Moments forts de nos retrouvailles.','images/VIDEO.mp4'],
+  ['Pèlerinage à l’ancienne école','Un retour chargé d’émotion à l’École Normale Demba Diop.','images/proviseur.mp4'],
+  ['Paroles de camarades','Les souvenirs et témoignages de nos anciens élèves-maîtres.','images/discours de Maolo.mp4'],
+  ['La vie de l’amicale','En images, nos rencontres et nos moments de solidarité.','images/retrouvaille à Saly.mp4'],
+  ['Nos projets en action','Les initiatives portées ensemble par les membres.','images/vidéo souvenir.mp4'],
+  ['Mémoire de la 11ème promotion','Un hommage aux années de formation et à leurs souvenirs.','images/VID-20261122-WA0024.mp4']
+];
+const videoGrid=document.getElementById('videoGrid');videos.forEach((v,i)=>{const card=document.createElement('article');card.className='overflow-hidden rounded-2xl border border-sand bg-cream shadow-sm';const media=v[2]?`<video controls class="aspect-[3/4] w-full bg-black object-cover object-top""><source src="${v[2]}" type="video/mp4">Votre navigateur ne supporte pas la lecture vidéo.</video>`:`<div class="grid aspect-video place-items-center bg-forest text-orange"><div class="text-center"><span class="mb-2 grid h-14 w-14 place-items-center rounded-full border border-orange/60 text-xl">▶</span><span class="text-xs font-semibold uppercase tracking-[.2em]">Vidéo 0${i+1}</span></div></div>`;card.innerHTML=`${media}<div class="p-5"><h3 class="font-serif text-lg font-bold text-forest">${v[0]}</h3><p class="copy mt-2 text-sm leading-6 text-ink/70">${v[1]}</p></div>`;videoGrid.append(card)});
+const projectGrid=document.getElementById('projectGrid');projects.forEach((p,i)=>{const card=document.createElement('article');card.className='grid overflow-hidden rounded-2xl bg-white shadow-md sm:grid-cols-[.9fr_1.1fr]';card.innerHTML=`<img class="h-56 w-full object-cover sm:h-full" src="https://images.unsplash.com/${p[2]}?auto=format&fit=crop&w=900&q=80" alt="Photo illustrative du projet ${p[0]}" loading="lazy"><div class="flex flex-col justify-center p-6 sm:p-8"><span class="mb-3 text-xs font-bold tracking-[.2em] text-orange">PROJET 0${i+1}</span><h3 class="font-serif text-xl font-bold text-forest">${p[0]}</h3><p class="copy mt-3 text-sm leading-7 text-ink/70">${p[1]}</p></div>`;projectGrid.append(card)});
+document.getElementById('shareButton').addEventListener('click',async()=>{const status=document.getElementById('shareStatus');try{if(navigator.share){await navigator.share({title:document.title,text:'Découvrez le site de l’Amicale ENRDD Mbour 82–86',url:location.href});status.textContent='Merci de faire vivre les liens de la promotion.'}else if(navigator.clipboard){await navigator.clipboard.writeText(location.href);status.textContent='Lien du site copié. Vous pouvez le partager aux camarades.'}else{status.textContent='Copiez le lien depuis la barre d’adresse pour le partager.'}}catch(e){if(e.name!=='AbortError')status.textContent='Le partage n’a pas abouti. Vous pouvez copier le lien depuis la barre d’adresse.'}});
+</script>-->
+<script>
+const nav=document.getElementById('mainMenu');
+document.querySelectorAll('.navlink').forEach(a=>a.className='navlink rounded-lg px-2 py-2 text-sm font-medium text-white/90 transition hover:bg-white/10 hover:text-orange');
+document.querySelectorAll('.quicklink').forEach(a=>a.className='quicklink rounded-lg bg-leaf px-3 py-2 text-sm text-white transition hover:bg-orange hover:text-forest');
+document.getElementById('menuToggle').addEventListener('click',e=>{const open=nav.classList.toggle('hidden')===false;e.currentTarget.setAttribute('aria-expanded',open)});
+const memberGrid=document.getElementById('memberGrid');
+
+const videos=[
+  ['Retrouvailles de la promotion','Moments forts de nos retrouvailles.','images/VIDEO.mp4'],
+  ['Pèlerinage à l’ancienne école','Un retour chargé d’émotion à l’École Normale Demba Diop.','images/proviseur.mp4'],
+  ['Paroles de camarades','Les souvenirs et témoignages de nos anciens élèves-maîtres.','images/discours de Maolo.mp4'],
+  ['La vie de l’amicale','En images, nos rencontres et nos moments de solidarité.','images/retrouvaille à Saly.mp4'],
+  ['Nos projets en action','Les initiatives portées ensemble par les membres.','images/vidéo souvenir.mp4'],
+  ['Mémoire de la 11ème promotion','Un hommage aux années de formation et à leurs souvenirs.','images/VID-20261122-WA0024.mp4']
+];
+const videoGrid=document.getElementById('videoGrid');videos.forEach((v,i)=>{const card=document.createElement('article');card.className='overflow-hidden rounded-2xl border border-sand bg-cream shadow-sm';const media=v[2]?`<video controls preload="metadata" class="aspect-[3/4] w-full bg-black object-cover object-top"><source src="${v[2]}" type="video/mp4">Votre navigateur ne supporte pas la lecture vidéo.</video>`:`<div class="grid aspect-video place-items-center bg-forest text-orange"><div class="text-center"><span class="mb-2 grid h-14 w-14 place-items-center rounded-full border border-orange/60 text-xl">▶</span><span class="text-xs font-semibold uppercase tracking-[.2em]">Vidéo 0${i+1}</span></div></div>`;card.innerHTML=`${media}<div class="p-5"><h3 class="font-serif text-lg font-bold text-forest">${v[0]}</h3><p class="copy mt-2 text-sm leading-6 text-ink/70">${v[1]}</p></div>`;videoGrid.append(card)});
+
+const projects=[
+  ['Retrouvailles et transmission','Des rencontres régulières pour raviver nos liens, partager nos expériences et transmettre la mémoire de la promotion.','photo-1511632765486-a01980e01a18'],
+  ['Solidarité entre camarades','Un réseau d’entraide et de présence auprès des membres et de leurs familles dans les moments importants.','photo-1531206715517-5c0ba140b2b8'],
+  ['Visite à l’ancienne école','Un pèlerinage à l’École Normale Demba Diop pour retrouver les lieux de formation et renouer avec leur histoire.','photo-1562774053-701939374585'],
+  ['Engagement communautaire','Des initiatives collectives au service de l’éducation, de la jeunesse et de notre communauté.','photo-1509062522246-3755977927d7']
+];
+const projectGrid=document.getElementById('projectGrid');projects.forEach((p,i)=>{const card=document.createElement('article');card.className='grid overflow-hidden rounded-2xl bg-white shadow-md sm:grid-cols-[.9fr_1.1fr]';card.innerHTML=`<img class="h-56 w-full object-cover sm:h-full" src="https://images.unsplash.com/${p[2]}?auto=format&fit=crop&w=900&q=80" alt="Photo illustrative du projet ${p[0]}" loading="lazy"><div class="flex flex-col justify-center p-6 sm:p-8"><span class="mb-3 text-xs font-bold tracking-[.2em] text-orange">PROJET 0${i+1}</span><h3 class="font-serif text-xl font-bold text-forest">${p[0]}</h3><p class="copy mt-3 text-sm leading-7 text-ink/70">${p[1]}</p></div>`;projectGrid.append(card)});
+
+document.getElementById('shareButton').addEventListener('click',async()=>{const status=document.getElementById('shareStatus');try{if(navigator.share){await navigator.share({title:document.title,text:'Découvrez le site de l’Amicale ENRDD Mbour 82–86',url:location.href});status.textContent='Merci de faire vivre les liens de la promotion.'}else if(navigator.clipboard){await navigator.clipboard.writeText(location.href);status.textContent='Lien du site copié. Vous pouvez le partager aux camarades.'}else{status.textContent='Copiez le lien depuis la barre d’adresse pour le partager.'}}catch(e){if(e.name!=='AbortError')status.textContent='Le partage n’a pas abouti. Vous pouvez copier le lien depuis la barre d’adresse.'}});
+</script>
+
+
+
+
+</body>
+</html>
